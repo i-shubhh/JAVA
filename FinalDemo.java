@@ -1,6 +1,6 @@
 class Student
 {
-    int rollno;
+    final int rollno;
     Student(int r)
     {
         rollno = r;
