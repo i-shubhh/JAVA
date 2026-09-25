@@ -20,7 +20,7 @@ class ICICI extends Bank {
     }
 }
 
-public class AbstractBank {
+public class Abstractbank {
     public static void main(String[] args) {
         
         Bank b1 = new SBI();

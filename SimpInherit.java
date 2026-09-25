@@ -22,7 +22,7 @@ class son extends Father
     }
 }
 
-class SimpInherit
+public class SimpInherit
 {
     public static void main(String[] args) {
         son s1 = new Son();
