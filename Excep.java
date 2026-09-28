@@ -12,7 +12,7 @@ class Student
      {
       throw new Exception("Student is not Eligible");
      }
-     System.err.println("Student is Eligible");
+     System.out.println("Student is Eligible");
 
   }
 }
@@ -28,12 +28,12 @@ class Excep
           }
           catch (Exception e )
           {
-            System.err.println("Exception : " + e.getMessage());
+            System.out.println("Exception : " + e.getMessage());
           }
           finally
           {
-            System.err.println("Final block Executed");
+            System.out.println("Final block Executed");
           }
-        System.err.println("Program Completed");
+        System.out.println("Program Completed");
     }
 }
