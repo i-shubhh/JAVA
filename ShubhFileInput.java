@@ -6,7 +6,7 @@ public class ShubhFileInput
     {
         FileInputStream f1 = new FileInputStream("shubh.txt");
         
-        int i ;
+        int i ; 
         while ((i = f1.read()) != -1)
         {
             System.out.print(i);

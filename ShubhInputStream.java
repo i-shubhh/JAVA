@@ -10,4 +10,3 @@ class ShubhInputStream
         int x = sh.read();
         System.out.print("Data : " +  x);
      }
-}
