@@ -8,12 +8,12 @@ public class InsertStudent
         {
             Connection con = DriverManager.getConnection("jdbc:sqlite:../college.db");
 
-            String sql = "INSERT INTO Student (StudentID, Name, Department, Marks) VALUES (?, ?, ?, ?)";
+            String sql = "INSERT INTO Student (STUDENTID, NAME, DEPARTMENT, MARKS) VALUES (?, ?, ?, ?)";
             PreparedStatement ps = con.prepareStatement(sql);
 
-            ps.setInt(1, 102);
+            ps.setInt(1, 104);
             ps.setString(2, "Shubham");
-            ps.setString(3 , "CSE");
+            ps.setString(3, "CSE");
             ps.setDouble(4, 85.5);
 
             int rows = ps.executeUpdate();

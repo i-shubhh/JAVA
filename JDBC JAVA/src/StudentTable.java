@@ -12,6 +12,13 @@ public class StudentTable
 
             System.out.println("DataBase Connected Successfully");
             Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("PRAGMA table_info(Student)");
+
+            while(rs.next())
+            {
+                System.out.println("Column: " + rs.getString("name"));
+                System.out.println("Type: " + rs.getString("type"));
+            }
 
             String sql = "CREATE TABLE IF NOT EXISTS Student (" +
                          "STUDENTID INTEGER PRIMARY KEY, " + 
